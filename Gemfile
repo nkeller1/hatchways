@@ -34,9 +34,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'faraday'
-gem 'figaro'
-gem 'factory_bot_rails'
-gem 'faker'
 gem 'json'
 
 group :development, :test do
@@ -46,7 +43,6 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
   gem 'awesome_print'
   gem 'simplecov'
   gem 'vcr'
