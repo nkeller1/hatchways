@@ -44,20 +44,20 @@ RSpec.describe '/post route' do
     expect(response.status).to eq(400)
     expect(response.body).to include("{\"error\":\"Tags parameter is required\"}")
   end
-  #
-  # it "returns a 400 if direction is invalid", :vcr do
-  #
-  #   get '/api/posts/?tag=tech&sortBy=likes&direction=APPLE'
-  #
-  #   expect(response.status).to eq(400)
-  #   expect(response.body).to include("{\"error\":\"sortBy parameter is invalid\"}")
-  # end
-  #
-  # it "returns a 400 if sortBy is invalid", :vcr do
-  #
-  #   get '/api/posts/?tag=tech&sortBy=APPLE'
-  #
-  #   expect(response.status).to eq(400)
-  #   expect(response.body).to include("{\"error\":\"sortBy parameter is invalid\"}")
-  # end
+
+  it "returns a 400 if direction is invalid", :vcr do
+
+    get '/api/posts/?tag=tech&sortBy=likes&direction=APPLE'
+
+    expect(response.status).to eq(400)
+    expect(response.body).to include("{\"error\":\"sortBy parameter is invalid\"}")
+  end
+
+  it "returns a 400 if sortBy is invalid", :vcr do
+
+    get '/api/posts/?tag=tech&sortBy=APPLE'
+
+    expect(response.status).to eq(400)
+    expect(response.body).to include("{\"error\":\"sortBy parameter is invalid\"}")
+  end
 end

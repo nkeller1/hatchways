@@ -10,9 +10,10 @@ class Api::PostController < ApplicationController
     direction = params['direction']
 
     allowed_sort_params = ['id', 'likes', 'popularity', 'reads', nil]
+    allowed_direction_params = [nil, 'asc', 'desc']
 
-    # return render json: sort_params_invalid if direction != nil || 'asc' || 'desc'
-    # return render json: sort_params_invalid if allowed_sort_params.include?(sortBy) == false
+    return render json: sort_params_invalid if allowed_direction_params.include?(direction) == false
+    return render json: sort_params_invalid if allowed_sort_params.include?(sortBy) == false
 
     response = tags.map do |tag|
       connection.get('/api/assessment/blog/posts') do |req|
