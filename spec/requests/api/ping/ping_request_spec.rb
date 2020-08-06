@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Ping the Hatchways API' do
+RSpec.describe 'Ping the API' do
   it "recieves a 200OK request", :vcr do
 
     get '/api/ping'
