@@ -5,8 +5,9 @@ class Api::PingController < ApplicationController
   end
 
   private
-      def success
-        response.status = 200
-        response.body = { "success": true }
-      end
+
+    def success
+      response.status = 200
+      response.body = { "success": true }
+    end
 end
