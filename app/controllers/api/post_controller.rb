@@ -39,7 +39,7 @@ class Api::PostController < ApplicationController
     end
 
 
-    render json: ordered_response
+    render json: { 'posts': ordered_response }
   end
 
 private
