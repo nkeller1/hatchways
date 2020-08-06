@@ -1,8 +1,5 @@
 class Api::PostController < ApplicationController
   def index
-    connection = Faraday.new(
-      url: 'https://hatchways.io'
-    )
     return render json: no_tag_present if params['tag'].nil?
 
     tags = params['tag'].split(",")
@@ -15,6 +12,10 @@ class Api::PostController < ApplicationController
     return render json: sort_params_invalid if allowed_direction_params.include?(direction) == false
     return render json: sort_params_invalid if allowed_sort_params.include?(sortBy) == false
 
+    connection = Faraday.new(
+      url: 'https://hatchways.io'
+    )
+    
     response = tags.map do |tag|
       connection.get('/api/assessment/blog/posts') do |req|
         req.params['tag'] = tag
@@ -38,20 +39,18 @@ class Api::PostController < ApplicationController
       ordered_response = ordered_response.reverse!
     end
 
-
     render json: { 'posts': ordered_response }
   end
 
-private
+  private
 
-  def no_tag_present
-    response.status = 400
-    response.body = { 'error': 'Tags parameter is required' }
-  end
+    def no_tag_present
+      response.status = 400
+      response.body = { 'error': 'Tags parameter is required' }
+    end
 
-  def sort_params_invalid
-    response.status = 400
-    response.body = { 'error': 'sortBy parameter is invalid' }
-  end
-
+    def sort_params_invalid
+      response.status = 400
+      response.body = { 'error': 'sortBy parameter is invalid' }
+    end
 end
