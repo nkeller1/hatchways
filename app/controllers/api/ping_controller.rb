@@ -2,6 +2,7 @@ class Api::PingController < ApplicationController
 
   def index
     render json: success
+    # require "pry"; binding.pry
   end
 
 private
