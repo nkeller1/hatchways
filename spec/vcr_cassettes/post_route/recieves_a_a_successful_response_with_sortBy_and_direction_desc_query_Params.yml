@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hatchways.io/api/assessment/blog/posts?tag=tech
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cloud-Trace-Context:
+      - 98d8f360460604463016a0025cd406b4
+      Date:
+      - Thu, 06 Aug 2020 19:26:20 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '6299'
+    body:
+      encoding: UTF-8
+      string: "{\n  \"posts\": [\n    {\n      \"author\": \"Rylee Paul\", \n      \"authorId\":
+        9, \n      \"id\": 1, \n      \"likes\": 960, \n      \"popularity\": 0.13,
+        \n      \"reads\": 50361, \n      \"tags\": [\n        \"tech\", \n        \"health\"\n
+        \     ]\n    }, \n    {\n      \"author\": \"Zackery Turner\", \n      \"authorId\":
+        12, \n      \"id\": 2, \n      \"likes\": 469, \n      \"popularity\": 0.68,
+        \n      \"reads\": 90406, \n      \"tags\": [\n        \"startups\", \n        \"tech\",
+        \n        \"history\"\n      ]\n    }, \n    {\n      \"author\": \"Elisha
+        Friedman\", \n      \"authorId\": 8, \n      \"id\": 4, \n      \"likes\":
+        728, \n      \"popularity\": 0.88, \n      \"reads\": 19645, \n      \"tags\":
+        [\n        \"science\", \n        \"design\", \n        \"tech\"\n      ]\n
+        \   }, \n    {\n      \"author\": \"Adalyn Blevins\", \n      \"authorId\":
+        11, \n      \"id\": 12, \n      \"likes\": 590, \n      \"popularity\": 0.32,
+        \n      \"reads\": 80351, \n      \"tags\": [\n        \"tech\"\n      ]\n
+        \   }, \n    {\n      \"author\": \"Elisha Friedman\", \n      \"authorId\":
+        8, \n      \"id\": 13, \n      \"likes\": 230, \n      \"popularity\": 0.31,
+        \n      \"reads\": 64058, \n      \"tags\": [\n        \"design\", \n        \"tech\"\n
+        \     ]\n    }, \n    {\n      \"author\": \"Trevon Rodriguez\", \n      \"authorId\":
+        5, \n      \"id\": 14, \n      \"likes\": 311, \n      \"popularity\": 0.67,
+        \n      \"reads\": 25644, \n      \"tags\": [\n        \"tech\", \n        \"history\"\n
+        \     ]\n    }, \n    {\n      \"author\": \"Lainey Ritter\", \n      \"authorId\":
+        1, \n      \"id\": 15, \n      \"likes\": 560, \n      \"popularity\": 0.8,
+        \n      \"reads\": 81549, \n      \"tags\": [\n        \"culture\", \n        \"startups\",
+        \n        \"tech\"\n      ]\n    }, \n    {\n      \"author\": \"Jaden Bryant\",
+        \n      \"authorId\": 3, \n      \"id\": 18, \n      \"likes\": 983, \n      \"popularity\":
+        0.09, \n      \"reads\": 33952, \n      \"tags\": [\n        \"tech\", \n
+        \       \"history\"\n      ]\n    }, \n    {\n      \"author\": \"Zackery
+        Turner\", \n      \"authorId\": 12, \n      \"id\": 24, \n      \"likes\":
+        940, \n      \"popularity\": 0.74, \n      \"reads\": 89299, \n      \"tags\":
+        [\n        \"culture\", \n        \"tech\", \n        \"politics\"\n      ]\n
+        \   }, \n    {\n      \"author\": \"Elisha Friedman\", \n      \"authorId\":
+        8, \n      \"id\": 25, \n      \"likes\": 365, \n      \"popularity\": 0.12,
+        \n      \"reads\": 32949, \n      \"tags\": [\n        \"politics\", \n        \"tech\"\n
+        \     ]\n    }, \n    {\n      \"author\": \"Zackery Turner\", \n      \"authorId\":
+        12, \n      \"id\": 26, \n      \"likes\": 748, \n      \"popularity\": 0.75,
+        \n      \"reads\": 28239, \n      \"tags\": [\n        \"tech\"\n      ]\n
+        \   }, \n    {\n      \"author\": \"Kinley Crosby\", \n      \"authorId\":
+        10, \n      \"id\": 35, \n      \"likes\": 868, \n      \"popularity\": 0.2,
+        \n      \"reads\": 66926, \n      \"tags\": [\n        \"tech\"\n      ]\n
+        \   }, \n    {\n      \"author\": \"Adalyn Blevins\", \n      \"authorId\":
+        11, \n      \"id\": 37, \n      \"likes\": 107, \n      \"popularity\": 0.55,
+        \n      \"reads\": 35946, \n      \"tags\": [\n        \"tech\", \n        \"health\",
+        \n        \"history\"\n      ]\n    }, \n    {\n      \"author\": \"Jon Abbott\",
+        \n      \"authorId\": 4, \n      \"id\": 43, \n      \"likes\": 149, \n      \"popularity\":
+        0.07, \n      \"reads\": 77776, \n      \"tags\": [\n        \"science\",
+        \n        \"tech\"\n      ]\n    }, \n    {\n      \"author\": \"Jon Abbott\",
+        \n      \"authorId\": 4, \n      \"id\": 46, \n      \"likes\": 89, \n      \"popularity\":
+        0.96, \n      \"reads\": 79298, \n      \"tags\": [\n        \"culture\",
+        \n        \"tech\"\n      ]\n    }, \n    {\n      \"author\": \"Jaden Bryant\",
+        \n      \"authorId\": 3, \n      \"id\": 51, \n      \"likes\": 487, \n      \"popularity\":
+        0.01, \n      \"reads\": 98798, \n      \"tags\": [\n        \"design\", \n
+        \       \"startups\", \n        \"tech\"\n      ]\n    }, \n    {\n      \"author\":
+        \"Bryson Bowers\", \n      \"authorId\": 6, \n      \"id\": 54, \n      \"likes\":
+        723, \n      \"popularity\": 0.56, \n      \"reads\": 312, \n      \"tags\":
+        [\n        \"culture\", \n        \"tech\"\n      ]\n    }, \n    {\n      \"author\":
+        \"Trevon Rodriguez\", \n      \"authorId\": 5, \n      \"id\": 58, \n      \"likes\":
+        466, \n      \"popularity\": 0.1, \n      \"reads\": 17389, \n      \"tags\":
+        [\n        \"science\", \n        \"tech\"\n      ]\n    }, \n    {\n      \"author\":
+        \"Tia Roberson\", \n      \"authorId\": 2, \n      \"id\": 59, \n      \"likes\":
+        971, \n      \"popularity\": 0.21, \n      \"reads\": 36154, \n      \"tags\":
+        [\n        \"politics\", \n        \"tech\"\n      ]\n    }, \n    {\n      \"author\":
+        \"Lainey Ritter\", \n      \"authorId\": 1, \n      \"id\": 76, \n      \"likes\":
+        122, \n      \"popularity\": 0.01, \n      \"reads\": 75771, \n      \"tags\":
+        [\n        \"tech\", \n        \"health\", \n        \"politics\"\n      ]\n
+        \   }, \n    {\n      \"author\": \"Trevon Rodriguez\", \n      \"authorId\":
+        5, \n      \"id\": 77, \n      \"likes\": 407, \n      \"popularity\": 0.21,
+        \n      \"reads\": 664, \n      \"tags\": [\n        \"politics\", \n        \"startups\",
+        \n        \"tech\", \n        \"science\"\n      ]\n    }, \n    {\n      \"author\":
+        \"Lainey Ritter\", \n      \"authorId\": 1, \n      \"id\": 82, \n      \"likes\":
+        140, \n      \"popularity\": 0.09, \n      \"reads\": 3201, \n      \"tags\":
+        [\n        \"tech\"\n      ]\n    }, \n    {\n      \"author\": \"Rylee Paul\",
+        \n      \"authorId\": 9, \n      \"id\": 84, \n      \"likes\": 233, \n      \"popularity\":
+        0.65, \n      \"reads\": 17854, \n      \"tags\": [\n        \"politics\",
+        \n        \"tech\", \n        \"history\"\n      ]\n    }, \n    {\n      \"author\":
+        \"Bryson Bowers\", \n      \"authorId\": 6, \n      \"id\": 85, \n      \"likes\":
+        25, \n      \"popularity\": 0.18, \n      \"reads\": 16861, \n      \"tags\":
+        [\n        \"tech\"\n      ]\n    }, \n    {\n      \"author\": \"Adalyn Blevins\",
+        \n      \"authorId\": 11, \n      \"id\": 89, \n      \"likes\": 251, \n      \"popularity\":
+        0.6, \n      \"reads\": 75503, \n      \"tags\": [\n        \"politics\",
+        \n        \"startups\", \n        \"tech\", \n        \"history\"\n      ]\n
+        \   }, \n    {\n      \"author\": \"Trevon Rodriguez\", \n      \"authorId\":
+        5, \n      \"id\": 93, \n      \"likes\": 881, \n      \"popularity\": 0.41,
+        \n      \"reads\": 73964, \n      \"tags\": [\n        \"tech\", \n        \"history\"\n
+        \     ]\n    }, \n    {\n      \"author\": \"Jon Abbott\", \n      \"authorId\":
+        4, \n      \"id\": 95, \n      \"likes\": 985, \n      \"popularity\": 0.42,
+        \n      \"reads\": 55875, \n      \"tags\": [\n        \"politics\", \n        \"tech\",
+        \n        \"health\", \n        \"history\"\n      ]\n    }, \n    {\n      \"author\":
+        \"Tia Roberson\", \n      \"authorId\": 2, \n      \"id\": 99, \n      \"likes\":
+        473, \n      \"popularity\": 0.34, \n      \"reads\": 97868, \n      \"tags\":
+        [\n        \"culture\", \n        \"startups\", \n        \"tech\"\n      ]\n
+        \   }\n  ]\n}"
+    http_version: null
+  recorded_at: Thu, 06 Aug 2020 19:24:46 GMT
+recorded_with: VCR 5.1.0
