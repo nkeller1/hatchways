@@ -33,9 +33,21 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'faraday'
+gem 'figaro'
+gem 'factory_bot_rails'
+gem 'faker'
+gem 'json'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'awesome_print'
 end
 
 group :development do
