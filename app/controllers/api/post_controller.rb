@@ -12,34 +12,11 @@ class Api::PostController < ApplicationController
     return render json: sort_params_invalid if allowed_direction_params.include?(direction) == false
     return render json: sort_params_invalid if allowed_sort_params.include?(sortBy) == false
 
-    connection = Faraday.new(
-      url: 'https://hatchways.io'
-    )
-    
-    response = tags.map do |tag|
-      connection.get('/api/assessment/blog/posts') do |req|
-        req.params['tag'] = tag
-      end
-    end
+    response = PostsService.new.gather_posts_from_tags(tags)
 
-    allposts = Array.new
+    sorted_response = Sortresponse.new.sort_response(response, sortBy, direction)
 
-    response.map do |rep|
-      allposts << JSON.parse(rep.body)['posts']
-      allposts
-    end
-
-    response = allposts.flatten.uniq
-
-      ordered_response = response.sort_by do |post|
-        post[sortBy]
-      end
-
-    if direction == 'desc'
-      ordered_response = ordered_response.reverse!
-    end
-
-    render json: { 'posts': ordered_response }
+    render json: { 'posts': sorted_response }
   end
 
   private
