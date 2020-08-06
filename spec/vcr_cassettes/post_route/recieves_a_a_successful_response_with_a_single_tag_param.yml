@@ -23,9 +23,9 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Cloud-Trace-Context:
-      - 73c825fe746e51c83dd3b540742d6ac0
+      - 34e936839a44d438880e29ac31a33e77
       Date:
-      - Thu, 06 Aug 2020 21:35:38 GMT
+      - Thu, 06 Aug 2020 23:06:24 GMT
       Server:
       - Google Frontend
       Content-Length:
@@ -123,5 +123,5 @@ http_interactions:
         [\n        \"culture\", \n        \"startups\", \n        \"tech\"\n      ]\n
         \   }\n  ]\n}"
     http_version: null
-  recorded_at: Thu, 06 Aug 2020 21:34:05 GMT
+  recorded_at: Thu, 06 Aug 2020 23:04:50 GMT
 recorded_with: VCR 5.1.0
