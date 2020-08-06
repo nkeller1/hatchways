@@ -7,5 +7,6 @@ RSpec.describe 'Ping the Hatchways API' do
 
     expect(response).to be_successful
     expect(response.headers["Content-Type"]).to eq("application/json; charset=utf-8")
+    expect(response.body).to include('success')
   end
 end
